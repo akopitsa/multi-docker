@@ -9,7 +9,8 @@ script:
   - docker run 24may/react-test npm test -- --coverage
 
 
-after_script:
+
+after_failure:
   - docker build -t 24may/multi-client ./client
   - docker build -t 24may/multi-nginx ./nginx
   - docker build -t 24may/multi-server ./server
