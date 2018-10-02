@@ -1,8 +1,9 @@
 sudo: required
-services: 
+service:
   - docker
 
 before_install:
+  - gem install bundler
   - docker build -t 24may/react-test -f ./client/Dockerfile.dev ./client
 
 script: 
