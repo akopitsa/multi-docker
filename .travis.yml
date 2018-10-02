@@ -19,3 +19,4 @@ after_suucess:
   - docker push 24may/multi-server
   - docker push 24may/worker
 
+af
